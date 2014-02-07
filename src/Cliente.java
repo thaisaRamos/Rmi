@@ -26,7 +26,7 @@ public class Cliente {
 			msg2.listaArquivos();
 		}
 		catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 	}
 	public void desconect() {
@@ -38,7 +38,7 @@ public class Cliente {
 		msg2.downloadHTTP();
 		}
 		catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 		
 	}
@@ -47,7 +47,7 @@ public class Cliente {
 		msg2.abriArquivo();
 		}
 		catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 	}
 	public void listarFilmes() {
@@ -55,7 +55,7 @@ public class Cliente {
 		//	InterfaceServer smsg = (InterfaceServer) registry.lookup("server");
 		}
 		catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 	}
 	public void resolverEquacao() {
@@ -63,7 +63,7 @@ public class Cliente {
 			//Calculadora smsg = (InterfaceServer) registry.lookup("server");
 		}
 		catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 		
 	}
