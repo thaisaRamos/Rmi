@@ -3,11 +3,6 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
 
-
-
-
-
-
 public class ServicosCliente {
 	Cliente cliente;
 	
@@ -48,7 +43,7 @@ public class ServicosCliente {
 		cliente.listarFilmes();
 		}
 		catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 	}
 
@@ -57,7 +52,7 @@ public class ServicosCliente {
 		cliente.resolverEquacao();
 		}
 		catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 	}
 	

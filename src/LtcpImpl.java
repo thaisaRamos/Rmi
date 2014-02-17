@@ -52,17 +52,16 @@ int porta;
     	String urlDosite = javax.swing.JOptionPane.showInputDialog("digite a url");
 	
     	 URL url = new URL(urlDosite); 
-		//C:\Users\Thaisa\Downloads
-		// deve se digitar C:\\Users\\Thaisa\\Downloads\\nomedoarquivo.extensao
+		
 		String localDoFile = javax.swing.JOptionPane.showInputDialog("digite o local aonde deseja armazena e seu nome");
 		
-		//cria um arquivo vazio para salvar a informaçao
+		//cria um arquivo vazio para salvar a informacao
 		out = new BufferedOutputStream(new FileOutputStream(localDoFile));
 		
 		
         connection = (HttpURLConnection) url.openConnection();
        
-       // int contentLength = connection.getContentLength();
+      
         
       //pega  byte a byte do arquivo
         in = connection.getInputStream();
@@ -103,7 +102,7 @@ int porta;
 	@Override
 	public boolean abriArquivo() throws RemoteException {
 		try {
-			String caminho = javax.swing.JOptionPane.showInputDialog("digite o local e nome.extençao do arquivo que deseja abrir");   
+			String caminho = javax.swing.JOptionPane.showInputDialog("digite o local e nome.extencao do arquivo que deseja abrir");
 
 			Runtime.getRuntime().exec("explorer"+ caminho);
 		}
@@ -167,22 +166,15 @@ int porta;
 		HttpURLConnection connection = null;
 	    InputStream in = null;
 	    try {
-	    	//String urlDosite = javax.swing.JOptionPane.showInputDialog("digite a url");
-		
+	    
 	    	 URL url = new URL(urlDosite); 
-			//C:\Users\Thaisa\Downloads
-			// deve se digitar C:\\Users\\Thaisa\\Downloads\\nomedoarquivo.extensao
-			//String localDoFile = javax.swing.JOptionPane.showInputDialog("digite o local aonde deseja armazena e seu nome");
 			
-			//cria um arquivo vazio para salvar a informaçao
+			//cria um arquivo vazio para salvar a informacao
 			out = new BufferedOutputStream(new FileOutputStream(localDoFile));
 			
 			
 	        connection = (HttpURLConnection) url.openConnection();
-	       
-	       // int contentLength = connection.getContentLength();
-	        
-	      //pega  byte a byte do arquivo
+	    
 	        in = connection.getInputStream();
 	 
 	       
