@@ -1,13 +1,11 @@
 
 
-import java.awt.BorderLayout;
+
 import java.awt.Container;
-import java.awt.EventQueue;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
+
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -15,41 +13,23 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 
 
-
-import java.awt.BorderLayout;
-import java.awt.Container;
-import java.awt.EventQueue;
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
-
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 
 
 
 public class GUI extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JPanel painelTela1;
 	JPanel painelTela11;
 	DefaultComboBoxModel combo;
 	JComboBox comboOpcao;
 	JButton botao1 ;
 	ServicosCliente sc;
-
-	/**
-	 * Launch the application.
-	 */
 
 
 
@@ -76,7 +56,7 @@ public class GUI extends JFrame {
 
 		painelTela1.setLayout(new GridLayout(4,4,20,30));
 
-		JLabel label1 = new JLabel("O que você deseja fazer?");
+		JLabel label1 = new JLabel("O que vocï¿½ deseja fazer?");
 		label1.isForegroundSet();
 		painelTela1.add(label1);
 
@@ -88,7 +68,7 @@ public class GUI extends JFrame {
 		combo.addElement("Download de um arquivo");
 		combo.addElement("Desconectar");
 		combo.addElement("lista de filmes");
-		combo.addElement("resolver uma equaçao");
+		combo.addElement("resolver uma equaï¿½ao");
 		
 		painelTela1.add(comboOpcao);
 		botao1 = new JButton("Confirma");
@@ -133,7 +113,7 @@ public class GUI extends JFrame {
 					sc.listarFilmes();
 
 				}
-				if(a.equalsIgnoreCase("resolver uma equaçao")){
+				if(a.equalsIgnoreCase("resolver uma equaï¿½ao")){
 
 					sc.resolverEquacao();
 
