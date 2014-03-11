@@ -7,6 +7,10 @@ import java.util.concurrent.PriorityBlockingQueue;
 
 
 public class ServerImpl extends UnicastRemoteObject implements InterfaceServer {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public  Comparator<Ltcp> comparador = new ComparadorLtsp();
 	public  PriorityBlockingQueue<Ltcp> Q = new PriorityBlockingQueue<Ltcp>(6, comparador);
 	

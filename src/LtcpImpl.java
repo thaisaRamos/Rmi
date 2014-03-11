@@ -8,7 +8,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.rmi.server.UnicastRemoteObject;
 import java.rmi.RemoteException;
-import java.util.ArrayList;
 public class LtcpImpl extends UnicastRemoteObject implements InterfaceLtcp {
    /**
 	 * 
